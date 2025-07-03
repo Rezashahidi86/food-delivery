@@ -357,6 +357,7 @@
     }
     .footer__bottom__links{
         text-align: start;
+        margin-right: 7rem;
     }
     .footer__bottom__hour{
         margin-left: 0;
