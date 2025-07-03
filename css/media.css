@@ -1,0 +1,390 @@
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .nav__menu__list{
+        margin-left: 0;
+    }   
+    .header__img{
+        margin-bottom: 9rem;
+    }
+    .header__bottom__right__img{
+        max-height: 24rem;
+    }
+    .main__food__images img:not(:first-child){
+        margin-left: 1rem;
+    }
+    .sale__food__img img{
+        right: -80px;
+        top: 95px;
+        width: 15rem;
+    }
+    .main__bottom{
+        gap: 3rem;
+    }
+    .footer__top img{
+        max-width: 8rem;
+        top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .nav__menu__list{
+        display: none;
+    }
+    .nav__menu__sidbar{
+    position: fixed;
+    left: -190px;
+    top: 0rem;
+    border-right: 0.2rem solid #323232;
+    height: 100%;
+    padding: 2rem 1.8rem;
+    background-color: #323232;
+    z-index: 2;
+    transition: all 250ms ease-in;
+    }
+    #icon__menu:checked + label + ul{
+        left: 0;
+    }
+    #icon__menu:checked + label svg:last-child{
+        display: block;
+    }
+    #icon__menu:checked + label svg:first-child{
+        display: none;
+    }
+    .nav__menu__sidbar .nav__list__item{
+        margin-top: 1rem;
+    }
+    .header__menu__icon{
+        display: block;
+    }
+    .header__bottom{
+        flex-direction: column-reverse;
+    }
+    .header__bottom__right__img{
+        max-height: 35rem;
+    }
+    .header__img{
+        margin-top: -6rem;
+        margin-left: 10rem;
+    }
+    .header__left{
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .header__bottom__buy{
+        display: none;
+    }
+    .header__buy__title{
+        margin-left: 3rem;
+        margin-top: -10rem;
+    }
+    .header__sumbit{
+        margin-left: -2rem;
+    }
+    .header__bottom__buy__mobile{
+        display: block;
+        margin-top: 10rem;
+    }
+    .header__buttom__left{
+        margin-right: -1rem;
+    }
+    .header__text{
+        text-align: center;
+    }
+    .header__title{
+        font-size: 38px;
+    }
+    .header__bottom__buy{
+        bottom: 2rem;
+        margin-left: 8rem;
+    }
+    .header__bottom__right__img{
+        max-height: 30rem;
+        max-width: 25rem;
+    }
+    .main__top{
+        margin-top: -5rem;
+    }
+    .main__top__food{
+        grid-template-columns: repeat(2, auto);
+    }
+    .main__bottom{
+        flex-direction: column-reverse;
+    }
+    .menu__ice img:not(:first-child){
+    margin-left: 4rem !important; 
+    }
+    .main__bottom__text{
+        margin-left: -10rem;
+        margin-top: 4rem;
+        max-width: 37rem;
+    }
+    .main__bottom__img{
+        margin-left: -30rem;
+    }
+    .main__bottom__img img{
+        max-height: 22rem;
+    }
+    .footer__top__submit input{
+        margin-right: 6rem;
+    }
+    .footer__top h4{
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+    .footer__bottom{
+        gap: 2rem;
+    }
+    .footer__bottom__ma__text{
+        flex-direction: column-reverse;
+    }
+    .footer__bottom__ma__text h4{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .header__bottom__buy{
+        bottom: 1rem;
+        margin-left: 7rem;
+        gap: 1rem;
+    }
+    .main__top__food{
+        grid-template-columns: repeat(auto-fit, minmax(270px ,1fr));  
+    }
+    .main__food__images img:not(:first-child){
+        margin-left: 8rem;
+    }
+    .menu__food__caption{
+        text-align: center;
+    }
+    .menu__food__price{
+        padding: 0rem 1rem;
+    }
+    .main__food__images img:not(:first-child){
+        margin-left: 10rem;
+    }
+    .sale__food__img img{
+        right: 15px;
+        top: 85px;
+        width: 16rem;
+    }
+    .menu__ice img:not(:first-child){
+    margin-left: 12rem !important; 
+    }
+    .main__bottom__img{
+        margin-left: -4rem;
+    }
+    .main__bottom__color{
+        border-radius: 500px 500px 0 0;
+    }
+    .main__bottom__text span{
+        font-size: 1rem;
+        margin-right: 5rem;
+    }
+    .main__bottom__text h3{
+        font-size: 2rem;
+        margin-right: 6rem;
+    }
+    .main__bottom__img img{
+        max-height: 15rem;
+    }
+    .main__bottom__text{
+        margin-left: 2rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .min__bottom__icon img {
+    max-width: 6rem;
+    }
+    .min__bottom__icon{
+        margin-left: 3.25rem;
+    }
+    .footer__top img:last-child{
+        top: 20.5rem;
+        left: 2rem;
+    }
+    .footer__bottom{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__bottom__ma__text{
+        flex-direction: row;
+    }
+    .footer__bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer__bottom__mc{
+        order: 1;
+        grid-column: 1/4;
+    }
+    .footer__bottom__ma__text{
+        margin: 0 auto;
+    }
+    .footer__bottom__links{
+        margin-bottom: 3.5rem;
+        text-align: start;
+    }
+    .footer__bottom__links h6{
+        font-size: 1.2rem;
+    }
+    .footer__bottom__hour{
+        text-align: start;
+        margin-left: 1rem;
+    }
+    .footer__bottom__hour h6{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    .header__title{
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    .title__delivery{
+        font-size: 1.1rem;
+    }
+    .time__delivery{
+        font-size: 0.8rem;
+    }
+    .header__bottom__right__img{
+        max-width: 20rem;
+    }
+    .header__delivery{
+        padding: 0;
+        top: 0;
+        left: -5rem;
+    }
+    .header__bottom__right__img{
+        max-width: 100%;
+    }
+    .header__img{
+        margin-left: 6rem;
+    }
+    .header__buy__title {
+        margin-left: 0rem;
+        margin-top: -13rem;
+    }
+    .header__buy__title {
+        margin-left: -7rem;
+        margin-top: -10rem;
+        text-align: center;
+    }
+    .header__sumbit{
+        margin-left: -7rem;
+        justify-content: center;
+    }
+    .header__bottom__buy{
+        margin-left: 10rem;
+        bottom: -1rem;
+    }
+    .main__food__images{
+        display: flex;
+    }
+    .main__food__images img:not(:first-child){
+        margin: 0 auto;
+    }
+    .sale__food__img img{
+        position: absolute;
+        right: -75px;
+        top: 90px;
+        width: 17rem;
+    }
+    .menu__ice img:not(:first-child){
+    margin: 0 auto !important; 
+    }
+    .footer__top h4{
+        font-size: 1.5rem;
+    }
+    .footer__top p{
+        font-size: 0.8rem;
+    }
+    .min__bottom__icon{
+        margin-right: 9rem;
+        max-width: 4rem;
+        margin-left: 0;
+    }
+    .main__bottom__text{
+        max-width: 250px;
+        text-align: center;
+    }
+    .main__bottom__text span{
+        font-size: 0.6rem;
+        margin-left: -5px;
+    }
+    .main__bottom__text h3{
+        font-size: 1.5rem;
+        margin-right: 100px;
+    }
+    .main__bottom__text p{
+        font-size: 9px;
+        margin-right: 98px;
+    }
+        .min__bottom__icon img {
+        max-width: 4rem
+    }
+    .footer__top__submit input{
+        margin-right: 2rem;
+    }
+    .footer__bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__bottom__hour, .footer__bottom__links{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 420px){
+    .footer__bottom{
+        justify-content: flex-start;
+    }
+    .footer__bottom__ma__text h4{
+        font-size: 1rem;
+    }
+    .footer__bottom__links{
+        text-align: start;
+    }
+    .footer__bottom__hour{
+        margin-left: 0;
+        text-align: start;
+    }
+    .main__bottom__text{
+        margin-left: 0;
+    }
+    .sale__food__img img{
+        top: 115px;
+        width: 12rem;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .header__bottom__buy{
+        margin-left: 8rem;
+        bottom: 6rem;
+    }
+    .nav__right__login a{
+        padding: 0.5rem;
+    }
+    .main__bottom__text span{
+        margin-left: 9px;
+    }
+    .footer__top__submit input{
+        margin-right: -2rem;
+    }
+    .footer__top img{
+        max-width: 6rem;
+    }
+}
